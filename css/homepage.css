@@ -1,0 +1,205 @@
+.Header-Full {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  /* position: fixed; */
+  padding: 20px 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: "Saira", sans-serif;
+}
+
+.header .brand {
+  font-size: 50px;
+  text-align: center !important;
+  font-weight: bold;
+  font-family: "Bungee Shade", sans-serif !important;
+  opacity: 0.8;
+}
+.header .brand:hover {
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 1;
+  color: black;
+}
+
+.header .header-right a:hover {
+  background-color: black;
+  color: white;
+}
+
+.header a.active {
+  color: black;
+  background-color: rgba(13, 12, 12, 0.463);
+}
+
+.header-right {
+  float: right;
+}
+.homepage {
+  width: 100%;
+  margin-top: 0;
+  background-color: white;
+}
+h3 {
+  font-family: "Parkinsans", serif;
+}
+@media screen and (max-width: 768px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header-Full {
+    position: relative;
+  }
+  header {
+    height: 60px;
+    position: fixed;
+  }
+  .homepage {
+    margin-top: 350px;
+  }
+}
+
+.card-body {
+  font-family: "Parkinsans", serif;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: black;
+}
+.homepage .row button {
+  color: white;
+  background-color: rgb(3, 169, 3);
+}
+.homepage .row button:hover {
+  color: black;
+  background-color: rgb(2, 118, 2);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 24px;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.footer-section a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #1e90ff;
+}
+
+.social-links a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #222;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer {
+    margin-top: 20vh;
+  }
+  .footer-section {
+    width: 100%;
+  }
+
+  .homepage {
+    margin-top: 70vh;
+  }
+}

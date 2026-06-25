@@ -1,0 +1,32 @@
+.container {
+  margin-top: 30px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.edit-btn:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-btn {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.delete-btn:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}

@@ -1,0 +1,22 @@
+# Render Blueprint — Premium Bus Car Booking System
+# Deploy: connect GitHub repo → Render Dashboard → New → Blueprint → select render.yaml
+
+databases:
+  - name: premium-bus-db
+    plan: free
+    databaseName: car_booking
+    user: car_booking
+
+services:
+  - type: web
+    name: premium-bus
+    runtime: docker
+    plan: free
+    healthCheckPath: /health.php
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: premium-bus-db
+          property: connectionString
+      - key: PHP_ENV
+        value: production
