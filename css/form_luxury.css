@@ -184,5 +184,13 @@
 .form-actions { margin-top: 8px; padding-top: 28px; border-top: 1px solid rgba(242,235,224,.06); }
 
 @media (max-width: 576px) {
-  .form-card-head, .form-card-body, .booking-form-fields { padding-left: 24px; padding-right: 24px; }
+  .form-page-inner { padding: 0 16px; }
+  .form-card-head, .form-card-body, .booking-form-fields { padding-left: 20px; padding-right: 20px; }
+  .form-card-head h2 { font-size: 24px; }
+  .form-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .form-submit-row { padding-top: 20px; }
 }

@@ -65,6 +65,11 @@ $isHome = $currentPage === 'homepage.php';
 document.getElementById('navToggle')?.addEventListener('click', function() {
   document.getElementById('navMenu').classList.toggle('open');
 });
+document.querySelectorAll('#navMenu a:not(.dropdown-toggle)').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('navMenu')?.classList.remove('open');
+  });
+});
 window.addEventListener('scroll', function() {
   var nav = document.querySelector('.Header-Full.nav-over-hero');
   if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
